@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import barapackLogo from '../../assets/barapack_logo.svg';
-import instagram from '../../assets/instagram.svg';
-import facebook from '../../assets/facebook.svg';
-import whatsapp from '../../assets/whatsapp.svg';
+import barapackLogo from '../../assets/svg/barapack_logo.svg';
+import instagram from '../../assets/svg/instagram.svg';
+import facebook from '../../assets/svg/facebook.svg';
+import whatsapp from '../../assets/svg/whatsapp.svg';
 import Logo from './Logo';
 
 const Navbar = () => {
 	return (
-		<header className='flex justify-between px-8 h-20 w-full bg-white'>
+		<header className='sticky top-0 flex justify-between px-8 h-20 w-full bg-white shadow-b-md'>
 			<section className='ml-4'>
 				<figure className='h-20'>
 					<Logo logo={barapackLogo} styles='w-full h-full' />
 				</figure>
 			</section>
-			<section className='flex items-center'>
+			<section className='flex items-center pb-1'>
 				<div className='flex items-end gap-8 h-full'>
 					<Link to={'/'}>Inicio</Link>
 					<Link to={'/'}>Contacto</Link>
