@@ -5,14 +5,11 @@ interface Props {
 }
 const Hero: React.FC<Props> = ({ children }) => {
 	return (
-		<section className='w-full'>
-			<div className='relative w-full h-[calc(100vh-80px)] overflow-hidden rounded-bl-[250px]'>
-				<img
-					src={hero}
-					className='absolute inset-0 w-full h-full object-cover object-right-bottom shadow-black shadow'
-					alt='Hero'
-				/>
-			</div>
+		<section className='w-full rounded-bl-[250px]'>
+			<img
+				src={hero}
+				className='relative -top-20 w-full h-[calc(100%-80px)] rounded-bl-[300px] shadow-black drop-shadow-custom'
+			/>
 
 			{children}
 		</section>
