@@ -8,7 +8,7 @@ const Hero: React.FC<Props> = ({ children }) => {
 		<section className='w-full rounded-bl-[250px]'>
 			<img
 				src={hero}
-				className='relative -top-20 w-full h-[calc(100%-80px)] rounded-bl-[300px] shadow-black drop-shadow-custom'
+				className='relative -top-56 w-full h-[calc(100%-80px)] rounded-bl-[300px] shadow-black drop-shadow-custom'
 			/>
 
 			{children}
