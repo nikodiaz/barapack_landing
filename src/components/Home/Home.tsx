@@ -27,7 +27,7 @@ const Home = () => {
 				</section>
 			</Hero>
 			<section className='flex flex-col items-center text-white'>
-				<h2 className='flex flex-col my-16 text-shadow-custom text-3xl font-semibold text-center text-[#E84E38]'>
+				<h2 className='flex flex-col mt-20 mb-16 text-shadow-custom text-3xl font-semibold text-center text-[#E84E38]'>
 					<span>No sólo transportamos cargas</span>
 					<span>
 						Entregamos confianza, dedicación y soluciones personalizadas

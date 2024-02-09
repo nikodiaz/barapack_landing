@@ -3,7 +3,7 @@ import Navbar from './components/NavBar/Navbar';
 
 function App() {
 	return (
-		<main className='font-roboto-slab font-[500]'>
+		<main className='mt-[80px] font-roboto-slab font-[500]'>
 			<Navbar />
 			<Home />
 		</main>

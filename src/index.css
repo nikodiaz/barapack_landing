@@ -9,3 +9,10 @@
 .text-shadow-custom {
 	text-shadow: 2px 2px 6px rgb(0 0 0 / 0.3);
 }
+
+.bg-image {
+	background-image: url('./assets/img/hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
