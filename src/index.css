@@ -10,9 +10,44 @@
 	text-shadow: 2px 2px 6px rgb(0 0 0 / 0.3);
 }
 
-.bg-image {
+.bg-image-hero {
 	background-image: url('./assets/img/hero.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
+}
+
+.bg-image-contact {
+	background-image: url('./assets/img/contact.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.triangle-1 {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		133deg,
+		rgba(0, 0, 0, 1) 5%,
+		rgba(217, 217, 217, 1) 35%,
+		rgba(217, 217, 217, 0) 100%
+	);
+	clip-path: polygon(45% 0, 0 0, 0 100%);
+	opacity: 0.5;
+}
+.parallel {
+	clip-path: polygon(65% 0%, 75% 0%, 8% 100%, 0% 100%);
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		112deg,
+		rgba(0, 0, 0, 0.5) 40%,
+		rgba(217, 217, 217, 0.1) 45%,
+		transparent 100%
+	);
+}
+
+@media screen and (min-width: 768px) {
+	.parallelogram {
+		clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+	}
 }

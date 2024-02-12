@@ -7,7 +7,7 @@ import Logo from './Logo';
 
 const Navbar = () => {
 	return (
-		<header className='fixed z-10 top-0 flex justify-between px-8 h-20 w-full bg-white shadow-md'>
+		<header className='fixed z-50 top-0 flex justify-between px-8 w-full h-20 max-w-[1360px] mx-auto bg-white shadow-md'>
 			<section className='ml-4'>
 				<figure className='h-20'>
 					<Logo logo={barapackLogo} styles='w-full h-full' />

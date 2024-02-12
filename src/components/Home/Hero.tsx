@@ -3,7 +3,7 @@ interface Props {
 }
 const Hero: React.FC<Props> = ({ children }) => {
 	return (
-		<section className='w-full h-[calc(100vh-80px)] rounded-bl-[250px] bg-image drop-shadow-custom'>
+		<section className='w-full h-[calc(100vh-80px)] max-h-[720px] rounded-bl-[250px] bg-image-hero drop-shadow-custom'>
 			{children}
 		</section>
 	);
