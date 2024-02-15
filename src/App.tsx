@@ -1,3 +1,4 @@
+import Branchs from './components/Branchs/Branchs';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import Navbar from './components/NavBar/Navbar';
@@ -8,6 +9,7 @@ function App() {
 			<Navbar />
 			<Home />
 			<Contact />
+			<Branchs />
 		</main>
 	);
 }
