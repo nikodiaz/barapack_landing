@@ -36,14 +36,28 @@
 	opacity: 0.5;
 }
 .parallel {
-	clip-path: polygon(65% 0%, 75% 0%, 8% 100%, 0% 100%);
+	clip-path: polygon(68% 0%, 75% 0%, 8% 100%, 0% 100%);
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
-		112deg,
+		113deg,
 		rgba(0, 0, 0, 0.5) 40%,
 		rgba(217, 217, 217, 0.1) 45%,
 		transparent 100%
 	);
+}
+
+.form-shadow {
+	background: linear-gradient(
+		to top,
+		rgba(231, 78, 56, 1) 0%,
+		rgba(231, 78, 56, 0.9) 50%,
+		rgba(231, 78, 56, 0.7) 65%,
+		transparent 100%
+	);
+}
+
+.form-shadow-2 {
+	background: linear-gradient(to bottom, #e84e38 0%, transparent 100%);
 }
 
 @media screen and (min-width: 768px) {

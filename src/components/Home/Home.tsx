@@ -44,13 +44,14 @@ const Home = () => {
 						Precios competitivos sin sacrificar la calidad del servicio
 					</Flag>
 				</section>
-
-				<h3 className='text-2xl text-black font-semibold'>
-					Servicios eficientes impulsan tu éxito
-				</h3>
-				<figure className='h-20 my-4'>
-					<Logo logo={barapackLogo} styles='w-full h-full' />
-				</figure>
+				<section className='relative flex flex-col items-center py-8'>
+					<h3 className='text-2xl text-black font-semibold'>
+						Servicios eficientes impulsan tu éxito
+					</h3>
+					<figure className='absolute top-16 h-20 my-4'>
+						<Logo logo={barapackLogo} styles='w-full h-full' />
+					</figure>
+				</section>
 			</section>
 		</>
 	);
