@@ -1,5 +1,6 @@
 import Branchs from './components/Branchs/Branchs';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/NavBar/Navbar';
 
@@ -10,6 +11,7 @@ function App() {
 			<Home />
 			<Contact />
 			<Branchs />
+			<Footer />
 		</main>
 	);
 }
