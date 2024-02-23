@@ -14,7 +14,7 @@
 	background-image: url('./assets/img/hero.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom;
+	background-position: -40rem;
 }
 
 .bg-image-contact {
@@ -28,7 +28,7 @@
 	background-image: url('./assets/img/google_maps.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 }
 
 .triangle-1 {
@@ -70,5 +70,8 @@
 @media screen and (min-width: 768px) {
 	.parallelogram {
 		clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+	}
+	.bg-image-hero {
+		background-position: bottom;
 	}
 }

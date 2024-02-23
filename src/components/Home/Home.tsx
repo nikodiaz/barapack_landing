@@ -11,23 +11,23 @@ const Home = () => {
 	return (
 		<>
 			<Hero>
-				<section className='absolute top-1/2 left-[20%] -translate-y-1/2 text-white'>
+				<section className='absolute top-1/2 md:left-[20%] px-2 md:px-0 text-center md:text-left -translate-y-1/2 text-white'>
 					<h1 className='text-5xl tracking-widest text-shadow-custom'>
 						Barapack
 					</h1>
-					<p className='w-2/3 mt-12 text-lg text-shadow-custom'>
+					<p className='md:w-2/3 mt-12 text-lg text-shadow-custom'>
 						Confianza y seguridad, respaldadas por una sólida estructura
 						de servicio.
 					</p>
 
 					<Button
 						content='Contactanos'
-						styles='mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
+						styles='mt-8 md:mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
 					/>
 				</section>
 			</Hero>
 			<section className='flex flex-col items-center text-white'>
-				<h2 className='flex flex-col mt-20 mb-16 text-shadow-custom text-3xl font-semibold text-center text-[#E84E38]'>
+				<h2 className='flex flex-col mt-20 mb-16 text-shadow-custom text-2xl md:text-3xl font-semibold text-center text-[#E84E38]'>
 					<span>No sólo transportamos cargas</span>
 					<span>
 						Entregamos confianza, dedicación y soluciones personalizadas
