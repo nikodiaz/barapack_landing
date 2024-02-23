@@ -33,7 +33,7 @@ const Home = () => {
 						Entregamos confianza, dedicación y soluciones personalizadas
 					</span>
 				</h2>
-				<section className='flex flex-col items-center w-full'>
+				<section className='flex flex-col items-center gap-4 px-2 w-full'>
 					<Flag icon={helpDesk} color='bg-[#E84E38]'>
 						Atendemos las necesidades de cada cliente
 					</Flag>
@@ -44,8 +44,8 @@ const Home = () => {
 						Precios competitivos sin sacrificar la calidad del servicio
 					</Flag>
 				</section>
-				<section className='relative flex flex-col items-center py-8'>
-					<h3 className='text-2xl text-black font-semibold'>
+				<section className='relative flex flex-col items-center md:py-8'>
+					<h3 className='px-2 text-lg md:text-2xl text-black font-semibold'>
 						Servicios eficientes impulsan tu éxito
 					</h3>
 					<figure className='absolute top-16 h-20 my-4'>
