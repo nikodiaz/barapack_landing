@@ -24,6 +24,13 @@
 	background-position: bottom;
 }
 
+.bg-image-map {
+	background-image: url('./assets/img/google_maps.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
 .triangle-1 {
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
