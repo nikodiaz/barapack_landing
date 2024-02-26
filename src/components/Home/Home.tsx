@@ -22,6 +22,7 @@ const Home = () => {
 
 					<Button
 						content='Contactanos'
+						borderStyles='px-12'
 						styles='mt-8 md:mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
 					/>
 				</section>
@@ -48,7 +49,7 @@ const Home = () => {
 					<h3 className='px-2 text-lg md:text-2xl text-black font-semibold'>
 						Servicios eficientes impulsan tu éxito
 					</h3>
-					<figure className='absolute top-16 h-20 my-4'>
+					<figure className='hidden md:block absolute top-16 h-20 my-4'>
 						<Logo logo={barapackLogo} styles='w-full h-full' />
 					</figure>
 				</section>

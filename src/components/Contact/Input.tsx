@@ -13,7 +13,7 @@ const Input: React.FC<Props> = ({ description, type, name, styles }) => {
 			<input
 				type={type || 'text'}
 				name={name}
-				className={`${styles} py-4 bg-transparent outline-0 border-b`}
+				className={`${styles} py-2 md:py-4 bg-transparent outline-0 border-b`}
 			/>
 		</label>
 	);

@@ -20,7 +20,7 @@
 .bg-image-contact {
 	background-image: url('./assets/img/contact.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: bottom;
 }
 
@@ -31,17 +31,6 @@
 	background-position: center;
 }
 
-.triangle-1 {
-	background: rgb(0, 0, 0);
-	background: linear-gradient(
-		133deg,
-		rgba(0, 0, 0, 1) 5%,
-		rgba(217, 217, 217, 1) 35%,
-		rgba(217, 217, 217, 0) 100%
-	);
-	clip-path: polygon(45% 0, 0 0, 0 100%);
-	opacity: 0.5;
-}
 .parallel {
 	clip-path: polygon(68% 0%, 75% 0%, 8% 100%, 0% 100%);
 	background: rgb(0, 0, 0);
@@ -53,25 +42,37 @@
 	);
 }
 
-.form-shadow {
-	background: linear-gradient(
-		to top,
-		rgba(231, 78, 56, 1) 0%,
-		rgba(231, 78, 56, 0.9) 50%,
-		rgba(231, 78, 56, 0.7) 65%,
-		transparent 100%
-	);
-}
-
-.form-shadow-2 {
-	background: linear-gradient(to bottom, #e84e38 0%, transparent 100%);
-}
-
 @media screen and (min-width: 768px) {
 	.parallelogram {
 		clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
 	}
 	.bg-image-hero {
 		background-position: bottom;
+	}
+	.bg-image-contact {
+		background-size: cover;
+	}
+	.triangle-1 {
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			133deg,
+			rgba(0, 0, 0, 1) 5%,
+			rgba(217, 217, 217, 1) 35%,
+			rgba(217, 217, 217, 0) 100%
+		);
+		clip-path: polygon(45% 0, 0 0, 0 100%);
+		opacity: 0.5;
+	}
+	.form-shadow {
+		background: linear-gradient(
+			to top,
+			rgba(231, 78, 56, 1) 0%,
+			rgba(231, 78, 56, 0.9) 50%,
+			rgba(231, 78, 56, 0.7) 65%,
+			transparent 100%
+		);
+	}
+	.form-shadow-2 {
+		background: linear-gradient(to bottom, #e84e38 0%, transparent 100%);
 	}
 }
