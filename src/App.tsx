@@ -1,18 +1,11 @@
-import Branchs from './components/Branchs/Branchs';
-import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
-// import Location from './components/Location/Location';
 import Navbar from './components/NavBar/Navbar';
 
-function App() {
+function App({ children }: { children: React.ReactNode }) {
 	return (
 		<main className='mt-[80px] font-roboto-slab font-[500] max-w-[1360px] mx-auto overflow-x-hidden'>
 			<Navbar />
-			<Home />
-			<Contact />
-			<Branchs />
-			{/* <Location /> */}
+			{children}
 			<Footer />
 		</main>
 	);

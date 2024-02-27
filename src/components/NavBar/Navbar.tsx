@@ -20,9 +20,9 @@ const Navbar = () => {
 			<section className='flex items-center pb-1'>
 				<div className='hidden md:flex items-end gap-8 h-full'>
 					<Link to={'/'}>Inicio</Link>
-					<Link to={'/'}>Contacto</Link>
-					<Link to={'/'}>Sucursales</Link>
-					<Link to={'/'}>Nosotros</Link>
+					<Link to={'#contact'}>Contacto</Link>
+					<Link to={'#branchs'}>Sucursales</Link>
+					<Link to={'/about'}>Nosotros</Link>
 				</div>
 				<div className='flex items-end gap-4 ml-4 h-full'>
 					<Logo logo={facebook} styles='w-8 h-8' />

@@ -27,6 +27,15 @@
 	);
 }
 
+.about-item {
+	background: linear-gradient(
+		to bottom,
+		transparent 0%,
+		rgba(231, 78, 56, 0.1) 50%,
+		rgba(231, 78, 56, 0.4) 100%
+	);
+}
+
 .bg-image-hero {
 	background-image: url('./assets/img/hero.png');
 	background-repeat: no-repeat;
