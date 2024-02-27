@@ -13,7 +13,7 @@ const Branchs = () => {
 					Encuentra nuestra sucursal más cercana
 				</p>
 			</div>
-			<div className='flex items-center justify-evenly py-12 w-full'>
+			<div className='flex flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'>
 				<Card img={rosario} title='Rosario' />
 				<Card img={bs_as} title='Buenos Aires' />
 				<Card img={cordoba} title='Córdoba' />

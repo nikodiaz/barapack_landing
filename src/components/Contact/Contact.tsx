@@ -14,13 +14,13 @@ const Contact = () => {
 	return (
 		<>
 			<HeaderForm styles='hidden md:block' text='text-3xl text-white' />
-			<section className='relative flex flex-row-reverse justify-between mt-16 md:mt-0 h-48 md:h-[650px]'>
-				<section className='md:absolute bg-image-contact w-full h-full'>
+			<section className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'>
+				<section className='relative md:absolute bg-image-contact w-full h-full'>
 					<div className='hidden relative md:flex'>
 						<div className='h-64 w-72 triangle-1'></div>
 					</div>
-					<div className='flex flex-col items-center ml-auto pr-4 w-2/3'>
-						<Logo logo={barapackLogo} styles='w-28 h-28' />
+					<div className='absolute top-1/3 right-12 md:static md:hidden flex flex-col items-center pr-4 w-1/3'>
+						<Logo logo={barapackLogo} styles='w-30 h-30' />
 						<Button
 							onclick={width < 768 ? () => setOpen(true) : undefined}
 							content='Contactanos'
@@ -38,7 +38,7 @@ const Contact = () => {
 				</section>
 				<PopUpForm open={open} setOpen={setOpen} />
 			</section>
-			<div className='form-shadow-2 h-16'></div>
+			<div className='hidden md:block form-shadow-2 h-16'></div>
 		</>
 	);
 };
