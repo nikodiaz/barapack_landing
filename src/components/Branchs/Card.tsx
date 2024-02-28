@@ -4,10 +4,10 @@ interface Props {
 }
 const Card: React.FC<Props> = ({ img, title }) => {
 	return (
-		<article className='relative flex flex-col w-full md:w-96 pt-4 rounded-md shadow-xl h-32 md:h-full card-shadow roun'>
+		<article className='relative flex flex-col w-full md:w-96 mt-8 rounded-md shadow-xl h-32 md:h-full card-shadow roun'>
 			<figure className='h-full md:h-[410px]'>
 				<img
-					className='w-full h-full object-cover rounded-lg md:rounded-t-md'
+					className='w-full h-full object-cover md:rounded-t-md md:rounded-b-none rounded-lg'
 					alt={title}
 					src={img}
 				/>
