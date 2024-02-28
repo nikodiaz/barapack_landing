@@ -40,7 +40,7 @@ const About = () => {
 						innovadoras y sostenibles que impulsan el crecimiento de sus
 						negocios.
 					</CardDesktop>
-					<div className='flex flex-row justify-end gap-20 px-8 mx-auto lg:flex-col lg:items-center w-full'>
+					<div className='flex lg:flex-row lg:justify-evenly gap-20 pl-8 mx-auto flex-col items-center w-full'>
 						<CardDesktop icon={vision} title='Visión'>
 							Siendo reconocidos por nuestra excelencia operativa y
 							compromiso inquebrantable. Aspiramos a ser la primera
