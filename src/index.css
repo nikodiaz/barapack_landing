@@ -68,20 +68,21 @@
 }
 
 .parallel {
-	clip-path: polygon(68% 0%, 75% 0%, 8% 100%, 0% 100%);
+	/* clip-path: polygon(68% 0%, 75% 0%, 8% 100%, 0% 100%); */
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
-		113deg,
-		rgba(0, 0, 0, 0.5) 40%,
+		90deg,
+		rgba(0, 0, 0, 0.5) 10%,
 		rgba(217, 217, 217, 0.1) 45%,
+
 		transparent 100%
 	);
 }
 
 @media screen and (min-width: 768px) {
-	.parallelogram {
+	/* .parallelogram {
 		clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
-	}
+	} */
 	.bg-image-hero {
 		background-position: bottom;
 	}

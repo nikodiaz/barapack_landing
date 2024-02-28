@@ -15,11 +15,11 @@ const Contact = () => {
 		<>
 			<HeaderForm styles='hidden md:block' text='text-3xl text-white' />
 			<section className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'>
-				<section className='relative md:absolute mt-4 md:mt-0 bg-image-contact w-full h-full'>
-					<div className='hidden relative md:flex'>
+				<section className='relative lg:absolute mt-4 md:mt-0 bg-image-contact w-full h-full'>
+					<div className='hidden relative lg:flex'>
 						<div className='h-64 w-72 triangle-1'></div>
 					</div>
-					<div className='absolute top-1/3 right-12 md:static md:hidden flex flex-col items-center pr-4 w-1/3'>
+					<div className='absolute top-1/3 right-12 lg:static lg:hidden flex flex-col items-center pr-4 w-1/3'>
 						<Logo logo={barapackLogo} styles='w-30 h-30' />
 						<Button
 							onclick={width < 768 ? () => setOpen(true) : undefined}
@@ -29,12 +29,8 @@ const Contact = () => {
 						/>
 					</div>
 				</section>
-				<section className='hidden md:block absolute z-10 w-full md:w-2/3'>
-					<div className='relative'>
-						<div className='hidden md:block absolute -left-16 w-[400px] parallel h-[650px]'></div>
-						<div className='hidden md:block absolute -left-32 w-[400px] parallel h-[650px]'></div>
-						<Form />
-					</div>
+				<section className='hidden lg:block absolute z-10 w-full md:w-1/2'>
+					<Form />
 				</section>
 				<PopUpForm open={open} setOpen={setOpen} />
 			</section>
