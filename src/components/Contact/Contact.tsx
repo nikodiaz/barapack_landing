@@ -15,7 +15,7 @@ const Contact = () => {
 		<>
 			<HeaderForm styles='hidden md:block' text='text-3xl text-white' />
 			<section className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'>
-				<section className='relative md:absolute bg-image-contact w-full h-full'>
+				<section className='relative md:absolute mt-4 md:mt-0 bg-image-contact w-full h-full'>
 					<div className='hidden relative md:flex'>
 						<div className='h-64 w-72 triangle-1'></div>
 					</div>
