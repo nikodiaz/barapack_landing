@@ -14,10 +14,7 @@ const Contact = () => {
 	return (
 		<>
 			<HeaderForm styles='hidden md:block' text='text-3xl text-white' />
-			<section
-				id='contact'
-				className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'
-			>
+			<section className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'>
 				<section className='relative lg:absolute mt-28 md:mt-0 bg-image-contact w-full h-full'>
 					<div className='hidden relative lg:flex'>
 						<div className='h-64 w-72 triangle-1'></div>

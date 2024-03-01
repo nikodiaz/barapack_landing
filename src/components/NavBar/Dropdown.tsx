@@ -24,10 +24,10 @@ const Dropdown: React.FC<Props> = ({ open, setOpen }) => {
 						<Link to={'/'}>Inicio</Link>
 					</li>
 					<li className='w-full'>
-						<Link to={'#contact'}>Contacto</Link>
+						<a href={'#contact'}>Contacto</a>
 					</li>
 					<li className='w-full'>
-						<Link to={'#branchs'}>Sucursales</Link>
+						<a href={'#branchs'}>Sucursales</a>
 					</li>
 					<li className='w-full'>
 						<Link to={'/about'}>Nosotros</Link>

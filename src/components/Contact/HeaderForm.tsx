@@ -6,6 +6,7 @@ type Props = {
 const HeaderForm: React.FC<Props> = ({ styles, text }) => {
 	return (
 		<div
+			id='contact'
 			className={`${styles} py-24 pt-36 px-4 md:px-8 form-shadow text-shadow-custom`}
 		>
 			<p className={`flex flex-col ${text}`}>

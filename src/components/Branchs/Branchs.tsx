@@ -67,7 +67,10 @@ const Branchs = () => {
 	}, [branchs]);
 
 	return (
-		<section className='flex flex-col items-center pt-36 py-12 px-4 md:px-0 w-full'>
+		<section
+			id='branchs'
+			className='flex flex-col items-center pt-36 py-12 px-4 md:px-0 w-full'
+		>
 			<div className='flex flex-col items-center gap-8 text-3xl text-[#E84E38]'>
 				<h2>Nuestra red</h2>
 				<p className='text-xl text-black'>

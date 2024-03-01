@@ -20,8 +20,8 @@ const Navbar = () => {
 			<section className='flex items-center pb-1'>
 				<div className='hidden md:flex items-end gap-8 h-full'>
 					<Link to={'/'}>Inicio</Link>
-					<Link to={'#contact'}>Contacto</Link>
-					<Link to={'#branchs'}>Sucursales</Link>
+					<a href={'#contact'}>Contacto</a>
+					<a href={'#branchs'}>Sucursales</a>
 					<Link to={'/about'}>Nosotros</Link>
 				</div>
 				<div className='flex items-end gap-4 ml-4 h-full'>
