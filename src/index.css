@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 .drop-shadow-custom {
 	filter: drop-shadow(0 1px 20px rgb(0 0 0 / 0.5));
 }

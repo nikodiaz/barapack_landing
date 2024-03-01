@@ -2,10 +2,10 @@ import Logo from '../NavBar/Logo';
 import Form from './Form';
 import barapackLogo from '../../assets/svg/barapack_logo.svg';
 import Button from '../Button/Button';
-import PopUpForm from './PopUpForm';
 import { useState } from 'react';
 import { useWindowSize } from 'react-use';
 import HeaderForm from './HeaderForm';
+import PopUpForm from './PopUpForm';
 
 const Contact = () => {
 	const [open, setOpen] = useState<boolean>(false);
@@ -14,8 +14,11 @@ const Contact = () => {
 	return (
 		<>
 			<HeaderForm styles='hidden md:block' text='text-3xl text-white' />
-			<section className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'>
-				<section className='relative lg:absolute mt-4 md:mt-0 bg-image-contact w-full h-full'>
+			<section
+				id='contact'
+				className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'
+			>
+				<section className='relative lg:absolute mt-28 md:mt-0 bg-image-contact w-full h-full'>
 					<div className='hidden relative lg:flex'>
 						<div className='h-64 w-72 triangle-1'></div>
 					</div>

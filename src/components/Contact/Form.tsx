@@ -6,13 +6,13 @@ const Form = () => {
 	return (
 		<article className='relative z-30 parallelogram flex justify-end w-full h-screen md:h-[650px] bg-black text-white'>
 			<HeaderForm
-				styles='absolute -top-24 block md:hidden'
-				text='px-4 text-lg font-bold'
+				styles='absolute -top-24 z-20 block md:hidden'
+				text='md:px-4 text-lg font-bold'
 			/>
 			<div className='hidden md:block absolute -left-72 parallel w-[100px] -skew-x-[23deg] h-[650px]'></div>
 			<div className='hidden md:block absolute -left-56 parallel w-[100px] -skew-x-[23deg] h-[650px]'></div>
 			<div className='absolute -bottom-0 z-10 -left-40 bg-black h-[650px] w-96 -skew-x-[23deg]'></div>
-			<form className='absolute z-20 w-full pr-8 pt-16'>
+			<form className='absolute z-20 w-full md:pr-8 pt-36 md:pt-12'>
 				<Input description='Razón social' name='subject' />
 
 				<Input description='Email' name='email' />

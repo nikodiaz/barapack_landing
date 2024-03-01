@@ -20,11 +20,13 @@ const Home = () => {
 						de servicio.
 					</p>
 
-					<Button
-						content='Contactanos'
-						borderStyles='px-12'
-						styles='mt-8 md:mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
-					/>
+					<a href={'#contact'}>
+						<Button
+							content='Contactanos'
+							borderStyles='px-12'
+							styles='mt-8 md:mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
+						/>
+					</a>
 				</section>
 			</Hero>
 			<section className='flex flex-col items-center text-white'>

@@ -7,10 +7,10 @@ interface Props {
 }
 const Card: React.FC<Props> = ({ img, title, address, phones, hours }) => {
 	return (
-		<article className='relative flex flex-col w-full md:w-80 lg:w-96 mb-8 md:mb-0 rounded-b-md shadow-xl md:h-[500px]'>
+		<article className='relative flex flex-col w-full md:w-80 lg:w-96 mb-8 md:mb-0 rounded-l-md shadow-xl md:h-[500px]'>
 			<figure className='hidden md:block h-full md:h-[400px]'>
 				<img
-					className='w-full h-full object-cover map-image'
+					className='w-full h-full object-cover map-image rounded-tl-md'
 					alt={title}
 					src={img}
 				/>
