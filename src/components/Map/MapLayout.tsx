@@ -25,7 +25,10 @@ const MapLayout: React.FC<Props> = ({ data, children }) => {
 	}, [data.coords]);
 
 	return (
-		<section className='flex flex-col-reverse md:flex-row items-center justify-center my-8 w-[100vw]'>
+		<section
+			id='map'
+			className='flex flex-col-reverse md:flex-row items-center justify-center py-20 w-[100vw]'
+		>
 			<MapCard
 				title={data.title}
 				img={data.img}
