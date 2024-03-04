@@ -6,8 +6,10 @@ import money from '../../assets/svg/vaadin_money-exchange.svg';
 import barapackLogo from '../../assets/svg/barapack_logo.svg';
 import Flag from './Flag';
 import Logo from '../NavBar/Logo';
+import { useWindowSize } from 'react-use';
 
 const Home = () => {
+	const { width } = useWindowSize();
 	return (
 		<>
 			<Hero>
@@ -20,7 +22,7 @@ const Home = () => {
 						de servicio.
 					</p>
 
-					<a href={'#contact'}>
+					<a href={width < 768 ? '#contact-mb' : '#contact'}>
 						<Button
 							content='Contactanos'
 							borderStyles='px-12'

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import bs_as from '../../assets/img/bs_as.png';
 import cordoba from '../../assets/img/cordoba.png';
 import rosario from '../../assets/img/rosario.png';
@@ -9,62 +9,48 @@ import Card from './Card';
 import PopUpCard from './PopUpCard';
 
 const Branchs = () => {
-	const branchs = useMemo(
-		() => [
-			{
-				title: 'Rosario',
-				img: rosario,
-				address: 'Av. Ovidio Lagos 6726',
-				phones: '+54 341 487 1234',
-				hours: 'Lunes a Viernes de 9:00 a 18:00',
-				coords: [-33.0163022, -60.6816149],
-			},
-			{
-				title: 'Buenos Aires',
-				img: bs_as,
-				address: 'Pepiri 1321 - Pomeya - CABA',
-				phones: '+54 341 487 1234',
-				hours: 'Lunes a Viernes de 9:00 a 18:00',
-				coords: [-34.6535252, -58.4116283],
-			},
-			{
-				title: 'Cordoba',
-				img: cordoba,
-				address: 'Av. Ovidio Lagos 6726',
-				phones: '+54 341 487 1234',
-				hours: 'Lunes a Viernes de 9:00 a 18:00',
-				coords: [-31.4215777, -64.1052784],
-			},
-		],
-		[],
-	);
-	const [open, setOpen] = useState<boolean>(false);
-	const [selectedBranchIndex, setSelectedBranchIndex] = useState(0);
+	const branchs = [
+		{
+			id: 0,
+			title: 'Rosario',
+			img: rosario,
+			address: 'Av. Ovidio Lagos 6726',
+			phones: '+54 341 487 1234',
+			hours: 'Lunes a Viernes de 9:00 a 18:00',
+			coords: [-33.0163022, -60.6816149],
+		},
+		{
+			id: 1,
+			title: 'Buenos Aires',
+			img: bs_as,
+			address: 'Pepiri 1321 - Pomeya - CABA',
+			phones: '+54 341 487 1234',
+			hours: 'Lunes a Viernes de 9:00 a 18:00',
+			coords: [-34.6535252, -58.4116283],
+		},
+		{
+			id: 2,
+			title: 'Cordoba',
+			img: cordoba,
+			address: 'Av. Ovidio Lagos 6726',
+			phones: '+54 341 487 1234',
+			hours: 'Lunes a Viernes de 9:00 a 18:00',
+			coords: [-31.4215777, -64.1052784],
+		},
+	];
 
-	const handleBranchSelect = (index: number) => {
-		setSelectedBranchIndex(index);
+	const [open, setOpen] = useState<boolean>(false);
+	const [selectedBranch, setSelectedBranch] = useState(branchs[0]);
+	console.log(selectedBranch);
+
+	const handleBranchSelect = (id: number) => {
+		setSelectedBranch(branchs[id]);
+		setOpen(true);
 		const mapElement = document.getElementById('map');
 		if (mapElement) {
 			mapElement.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
-
-	const selectedBranch = useMemo(
-		() => branchs[selectedBranchIndex],
-		[branchs, selectedBranchIndex],
-	);
-
-	const branchCards = useMemo(() => {
-		return branchs.map((branch, index) => (
-			<Card
-				setOpen={() => setOpen(true)}
-				key={branch.title}
-				img={branch.img}
-				title={branch.title}
-				handleClick={() => handleBranchSelect(index)}
-			/>
-		));
-	}, [branchs]);
 
 	return (
 		<section
@@ -78,7 +64,15 @@ const Branchs = () => {
 				</p>
 			</div>
 			<div className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'>
-				{branchCards}
+				{branchs.map((branch) => (
+					<Card
+						setOpen={() => setOpen(true)}
+						key={branch.title}
+						img={branch.img}
+						title={branch.title}
+						handleClick={() => handleBranchSelect(branch.id)}
+					/>
+				))}
 				<PopUpCard
 					open={open}
 					setOpen={() => setOpen(false)}
