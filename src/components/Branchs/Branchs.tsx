@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import Map from '../Map/Map';
 import MapLayout from '../Map/MapLayout';
 import Card from './Card';
-import PopUpCard from './PopUpCard';
+//import PopUpCard from './PopUpCard';
 
 const Branchs = () => {
 	const branchs = [
@@ -17,7 +17,7 @@ const Branchs = () => {
 			address: 'Av. Ovidio Lagos 6726',
 			phones: '+54 341 487 1234',
 			hours: 'Lunes a Viernes de 9:00 a 18:00',
-			coords: [-33.0163022, -60.6816149],
+			coords: [-33.0160433, -60.6786433],
 		},
 		{
 			id: 1,
@@ -26,26 +26,25 @@ const Branchs = () => {
 			address: 'Pepiri 1321 - Pomeya - CABA',
 			phones: '+54 341 487 1234',
 			hours: 'Lunes a Viernes de 9:00 a 18:00',
-			coords: [-34.6535252, -58.4116283],
+			coords: [-34.6535016, -58.4070519],
 		},
 		{
 			id: 2,
 			title: 'Cordoba',
 			img: cordoba,
-			address: 'Av. Ovidio Lagos 6726',
+			address: 'Parque Industrial, POLO 52',
 			phones: '+54 341 487 1234',
 			hours: 'Lunes a Viernes de 9:00 a 18:00',
-			coords: [-31.4215777, -64.1052784],
+			coords: [-31.4215478, -64.1026972],
 		},
 	];
 
-	const [open, setOpen] = useState<boolean>(false);
+	//const [open, setOpen] = useState<boolean>(false);
 	const [selectedBranch, setSelectedBranch] = useState(branchs[0]);
-	console.log(selectedBranch);
 
 	const handleBranchSelect = (id: number) => {
 		setSelectedBranch(branchs[id]);
-		setOpen(true);
+		//setOpen(true);
 		const mapElement = document.getElementById('map');
 		if (mapElement) {
 			mapElement.scrollIntoView({ behavior: 'smooth' });
@@ -66,18 +65,18 @@ const Branchs = () => {
 			<div className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'>
 				{branchs.map((branch) => (
 					<Card
-						setOpen={() => setOpen(true)}
+						//setOpen={() => setOpen(true)}
 						key={branch.title}
 						img={branch.img}
 						title={branch.title}
 						handleClick={() => handleBranchSelect(branch.id)}
 					/>
 				))}
-				<PopUpCard
+				{/* <PopUpCard
 					open={open}
 					setOpen={() => setOpen(false)}
 					data={selectedBranch}
-				/>
+				/> */}
 			</div>
 			<a href='#contact'>
 				<Button
