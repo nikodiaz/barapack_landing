@@ -83,7 +83,27 @@ html {
 	);
 }
 
-@media screen and (min-width: 768px) {
+/* ANIMATIONS */
+
+.hero-title {
+	animation: textAnimation 0.5s linear;
+	animation-delay: 0.2s;
+}
+
+@keyframes textAnimation {
+	from {
+		font-style: italic;
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+		font-style: italic;
+	}
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (width >= 768px) {
 	/* .parallelogram {
 		clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
 	} */

@@ -14,7 +14,7 @@ const Home = () => {
 		<>
 			<Hero>
 				<section className='absolute top-1/2 md:left-[20%] px-2 md:px-0 text-center md:text-left -translate-y-1/2 text-white'>
-					<h1 className='text-5xl tracking-widest text-shadow-custom'>
+					<h1 className='text-5xl tracking-widest text-shadow-custom hero-title'>
 						Barapack
 					</h1>
 					<p className='md:w-2/3 mt-12 text-lg text-shadow-custom'>
@@ -31,7 +31,11 @@ const Home = () => {
 					</a>
 				</section>
 			</Hero>
-			<section className='flex flex-col items-center text-white'>
+			<section
+				data-aos='fade-up'
+				data-aos-anchor-placement='top-center'
+				className='flex flex-col items-center text-white'
+			>
 				<h2 className='flex flex-col mt-20 mb-16 text-shadow-custom text-2xl md:text-3xl font-semibold text-center text-[#E84E38]'>
 					<span>No sólo transportamos cargas</span>
 					<span>

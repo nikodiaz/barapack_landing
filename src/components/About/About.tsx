@@ -7,20 +7,22 @@ import CardDesktop from './CardDesktop';
 
 const About = () => {
 	return (
-		<section className='min-h-screen'>
-			<section className='flex flex-col items-center md:px-0'>
-				<img
-					className='relative w-full min-h-40 object-cover'
-					src={about}
-					alt=''
-				/>
-				<h3 className='absolute right-4 top-28 md:top-32 text-shadow-custom text-xl md:text-4xl text-right text-white w-1/2 md:w-1/3'>
+		<section className='relative min-h-screen'>
+			<section
+				data-aos='fade-left'
+				className='flex flex-col items-center md:px-0'
+			>
+				<img className='w-full min-h-40 object-cover' src={about} alt='' />
+				<h3 className='absolute right-4 top-10 md:top-12 lg:top-20 xl:top-28 text-shadow-custom text-xl md:text-3xl lg:text-4xl text-right text-white w-1/2 lg:w-1/3'>
 					Tu confianza nos impulsa a seguir creciendo
 				</h3>
 			</section>
-			<section className='flex flex-col items-center p-6 sm:text-center'>
+			<section
+				data-aos='fade-up'
+				className='flex flex-col items-center p-6 sm:text-center'
+			>
 				<h2 className='text-3xl py-4'>Nosotros</h2>
-				<p>
+				<p className='text-justify'>
 					Esta empresa, de raíces familiares y fundada en la década de
 					1990, se especializa en el transporte terrestre mediante
 					camiones, inicialmente enfocándose en la logística de granos. A
@@ -32,7 +34,10 @@ const About = () => {
 					soluciones integrales que superen las expectativas de nuestros
 					clientes.{' '}
 				</p>
-				<div className='flex flex-col items-center w-full my-16'>
+				<div
+					data-aos='fade-up'
+					className='flex flex-col items-center w-full my-16'
+				>
 					<CardDesktop icon={mission} title='Misión'>
 						Siendo reconocidos por nuestra excelencia operativa y
 						compromiso inquebrantable. Aspiramos a ser la primera elección

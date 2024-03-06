@@ -58,7 +58,11 @@ const Testimonial = () => {
 	};
 
 	return (
-		<section className='mb-20'>
+		<section
+			data-aos='fade-up'
+			data-aos-anchor-placement='top-center'
+			className='mb-20'
+		>
 			<Slider {...settings}>
 				{testimonialData.map((testimonial) => (
 					<Card key={testimonial.id} testimonial={testimonial} />

@@ -62,7 +62,11 @@ const Branchs = () => {
 					Encuentra nuestra sucursal más cercana
 				</p>
 			</div>
-			<div className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'>
+			<div
+				data-aos='fade-up'
+				data-aos-anchor-placement='top-center'
+				className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'
+			>
 				{branchs.map((branch) => (
 					<Card
 						//setOpen={() => setOpen(true)}

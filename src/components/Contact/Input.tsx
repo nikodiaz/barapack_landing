@@ -8,7 +8,7 @@ interface Props {
 }
 const Input: React.FC<Props> = ({ description, type, name, styles }) => {
 	return (
-		<label className='flex flex-col p-4'>
+		<label className='flex flex-col p-2 lg:p-4'>
 			<span>{description}</span>
 			<input
 				type={type || 'text'}

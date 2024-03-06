@@ -9,7 +9,7 @@ type Props = {
 const PopUpForm: React.FC<Props> = ({ open, setOpen }) => {
 	return (
 		<div
-			className={`fixed z-50 top-0 bottom-0 left-0 right-0 ${
+			className={`fixed z-50 top-0 bottom-0 left-0 right-0 lg:hidden ${
 				open ? 'block' : 'hidden'
 			}`}
 		>

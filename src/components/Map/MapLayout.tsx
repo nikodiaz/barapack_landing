@@ -26,6 +26,8 @@ const MapLayout: React.FC<Props> = ({ data, children }) => {
 
 	return (
 		<section
+			data-aos='fade-up'
+			data-aos-anchor-placement='top-center'
 			id='map'
 			className='flex flex-col-reverse md:flex-row items-center justify-center py-20 w-[100vw]'
 		>

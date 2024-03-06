@@ -12,8 +12,11 @@ const Contact = () => {
 	const { width } = useWindowSize();
 
 	return (
-		<>
-			<HeaderForm styles='hidden md:block' text='text-3xl text-white' />
+		<section data-aos='fade-up'>
+			<HeaderForm
+				styles='hidden md:block form-shadow text-shadow-custom'
+				text='text-3xl text-white'
+			/>
 			<section
 				id='contact-mb'
 				className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'
@@ -26,7 +29,9 @@ const Contact = () => {
 						<Logo logo={barapackLogo} styles='w-30 h-30' />
 						<Button
 							onclick={
-								width < 768 ? () => setOpen(true) : () => setOpen(false)
+								width < 1024
+									? () => setOpen(true)
+									: () => setOpen(false)
 							}
 							content='Contactanos'
 							borderStyles='px-10'
@@ -40,7 +45,7 @@ const Contact = () => {
 				<PopUpForm open={open} setOpen={setOpen} />
 			</section>
 			<div className='hidden md:block form-shadow-2 h-16'></div>
-		</>
+		</section>
 	);
 };
 
