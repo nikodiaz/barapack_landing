@@ -17,7 +17,7 @@ const Card: React.FC<Props> = ({ testimonial }) => {
 						<img
 							className='w-20 h-20 object-cover rounded-full'
 							alt={testimonial.name}
-							src={`../../../public/testimonial/${testimonial.image}`}
+							src={`${process.env.PUBLIC_URL}/testimonial/${testimonial.image}`}
 						/>
 					</div>
 				</div>
