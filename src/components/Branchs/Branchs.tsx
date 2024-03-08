@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import bs_as from '../../assets/img/bs_as.png';
-import cordoba from '../../assets/img/cordoba.png';
-import rosario from '../../assets/img/rosario.png';
+import bs_as from '../../assets/img/bs_as.webp';
+import cordoba from '../../assets/img/cordoba.webp';
+import rosario from '../../assets/img/rosario.webp';
 import Button from '../Button/Button';
 import Map from '../Map/Map';
 import MapLayout from '../Map/MapLayout';

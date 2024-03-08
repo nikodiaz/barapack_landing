@@ -2,9 +2,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Card from './Card';
-import testimonial_1 from '../../assets/img/testimonial_1.png';
-import testimonial_2 from '../../assets/img/testimonial_2.png';
-import testimonial_3 from '../../assets/img/testimonial_3.png';
+import testimonial_1 from '../../assets/img/testimonial_1.webp';
+import testimonial_2 from '../../assets/img/testimonial_2.webp';
+import testimonial_3 from '../../assets/img/testimonial_3.webp';
 
 const Testimonial = () => {
 	const testimonialData = [

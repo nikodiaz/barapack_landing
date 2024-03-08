@@ -1,4 +1,4 @@
-import about from '../../assets/img/about.png';
+import about from '../../assets/img/about.webp';
 import mission from '../../assets/svg/mission.svg';
 import vision from '../../assets/svg/vision.svg';
 import values from '../../assets/svg/values.svg';
