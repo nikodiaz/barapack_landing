@@ -2,27 +2,30 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Card from './Card';
+import testimonial_1 from '../../assets/img/testimonial_1.png';
+import testimonial_2 from '../../assets/img/testimonial_2.png';
+import testimonial_3 from '../../assets/img/testimonial_3.png';
 
 const Testimonial = () => {
 	const testimonialData = [
 		{
 			id: 0,
 			name: 'Santiago Martinez',
-			image: 'testimonial_1.png',
+			image: testimonial_1,
 			comment:
 				'"Desde el primer contacto, han demostrado un alto nivel de profesionalismo y compromiso con la satisfacción del cliente. Sus tarifas competitivas y el servicio que brindan son muy buenos. Barpack es nuestra logística de confianza."',
 		},
 		{
 			id: 1,
 			name: 'Valentina Fux',
-			image: 'testimonial_2.png',
+			image: testimonial_2,
 			comment:
 				'"Barapack ha demostrado ser confiable y eficiente en cada envío que hemos realizado con ellos. Sus conductores son profesionales y cuidadosos con la carga. Definitivamente seguiremos confiando en ellos para todas nuestras necesidades de transporte."',
 		},
 		{
 			id: 2,
 			name: 'Julian Bianchi',
-			image: 'testimonial_3.png',
+			image: testimonial_3,
 			comment:
 				'"La puntualidad en las entregas y el cuidado con el que Barapack maneja nuestras mercancías son impresionantes. Sin duda, recomiendo sus servicios a cualquier empresa que busque un transporte confiable y de calidad"',
 		},
