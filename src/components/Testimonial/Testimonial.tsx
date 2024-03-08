@@ -69,6 +69,10 @@ const Testimonial = () => {
 			data-aos-anchor-placement='top-center'
 			className='mb-20'
 		>
+			<div className='w-full text-center mb-8'>
+				<h3 className='text-2xl mb-4'>Confianza ganada</h3>
+				<p className='font-normal'>Nuestros clientes satisfechos</p>
+			</div>
 			<Slider {...settings}>
 				{testimonialData.map((testimonial) => (
 					<Card key={testimonial.id} testimonial={testimonial} />

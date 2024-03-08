@@ -6,7 +6,6 @@ import Button from '../Button/Button';
 import Map from '../Map/Map';
 import MapLayout from '../Map/MapLayout';
 import Card from './Card';
-//import PopUpCard from './PopUpCard';
 
 const Branchs = () => {
 	const branchs = [
@@ -39,12 +38,10 @@ const Branchs = () => {
 		},
 	];
 
-	//const [open, setOpen] = useState<boolean>(false);
 	const [selectedBranch, setSelectedBranch] = useState(branchs[0]);
 
 	const handleBranchSelect = (id: number) => {
 		setSelectedBranch(branchs[id]);
-		//setOpen(true);
 		const mapElement = document.getElementById('map');
 		if (mapElement) {
 			mapElement.scrollIntoView({ behavior: 'smooth' });
@@ -54,6 +51,8 @@ const Branchs = () => {
 	return (
 		<section
 			id='branchs'
+			data-aos='fade-up'
+			data-aos-anchor-placement='top-center'
 			className='flex flex-col items-center pt-36 py-12 px-4 md:px-0 w-full'
 		>
 			<div className='flex flex-col items-center gap-8 text-3xl text-[#E84E38]'>
@@ -62,25 +61,15 @@ const Branchs = () => {
 					Encuentra nuestra sucursal más cercana
 				</p>
 			</div>
-			<div
-				data-aos='fade-up'
-				data-aos-anchor-placement='top-center'
-				className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'
-			>
+			<div className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'>
 				{branchs.map((branch) => (
 					<Card
-						//setOpen={() => setOpen(true)}
 						key={branch.title}
 						img={branch.img}
 						title={branch.title}
 						handleClick={() => handleBranchSelect(branch.id)}
 					/>
 				))}
-				{/* <PopUpCard
-					open={open}
-					setOpen={() => setOpen(false)}
-					data={selectedBranch}
-				/> */}
 			</div>
 			<a href='#contact'>
 				<Button

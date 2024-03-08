@@ -5,7 +5,6 @@ interface Props {
 	img: string;
 	title: string;
 	handleClick: () => void;
-	//setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Card: React.FC<Props> = ({ img, title, handleClick }) => {
 	const { width } = useWindowSize();
@@ -20,7 +19,6 @@ const Card: React.FC<Props> = ({ img, title, handleClick }) => {
 			</figure>
 			<figcaption
 				onClick={() => {
-					//setOpen(true);
 					width < 768 && handleClick();
 				}}
 				className='absolute z-10 top-12 left-0 right-0 md:static flex flex-col items-center justify-center gap-4 py-6 text-white md:text-black text-center text-xl md:text-3xl text-shadow-custom'
