@@ -13,7 +13,7 @@ const Testimonial = () => {
 			name: 'Santiago Martinez',
 			image: testimonial_1,
 			comment:
-				'"Desde el primer contacto, han demostrado un alto nivel de profesionalismo y compromiso con la satisfacción del cliente. Sus tarifas competitivas y el servicio que brindan son muy buenos. Barpack es nuestra logística de confianza."',
+				'"Desde el primer contacto, han demostrado un alto nivel de profesionalismo y compromiso con la satisfacción del cliente. Sus tarifas competitivas y el servicio que brindan son muy buenos. Barapack es nuestra logística de confianza."',
 		},
 		{
 			id: 1,
@@ -27,7 +27,7 @@ const Testimonial = () => {
 			name: 'Julian Bianchi',
 			image: testimonial_3,
 			comment:
-				'"La puntualidad en las entregas y el cuidado con el que Barapack maneja nuestras mercancías son impresionantes. Sin duda, recomiendo sus servicios a cualquier empresa que busque un transporte confiable y de calidad"',
+				'"La puntualidad en las entregas y el cuidado con el que Barapack maneja nuestras mercancías son impresionantes. Sin duda, recomiendo sus servicios a cualquier empresa que busque un transporte confiable y de calidad."',
 		},
 	];
 
