@@ -3,9 +3,8 @@ import bs_as from '../../assets/img/bs_as.webp';
 import cordoba from '../../assets/img/cordoba.webp';
 import rosario from '../../assets/img/rosario.webp';
 import Button from '../Button/Button';
-import Map from '../Map/Map';
-import MapLayout from '../Map/MapLayout';
 import Card from './Card';
+import LazyMap from '../Map/LazyMap';
 
 const Branchs = () => {
 	const branchs = [
@@ -78,9 +77,8 @@ const Branchs = () => {
 					styles='mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
 				/>
 			</a>
-			<MapLayout data={selectedBranch}>
-				<Map data={selectedBranch} />
-			</MapLayout>
+
+			<LazyMap data={selectedBranch} />
 		</section>
 	);
 };
