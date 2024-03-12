@@ -37,7 +37,13 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='flex items-center gap-4 md:col-start-3 md:col-end-4'>
-				Developed by <Logo logo={futurisi} styles='w-20 h-20' />
+				Developed by{' '}
+				<Logo
+					link='https://futurisi.com'
+					target='_blank'
+					logo={futurisi}
+					styles='w-20 h-20'
+				/>
 			</div>
 		</footer>
 	);
