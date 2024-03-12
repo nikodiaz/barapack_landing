@@ -5,10 +5,11 @@ interface Props {
 	logo: string;
 	styles?: string;
 	link?: string;
+	target?: string;
 }
-const Logo: React.FC<Props> = ({ logo, styles, link }) => {
+const Logo: React.FC<Props> = ({ logo, styles, link, target }) => {
 	return (
-		<Link to={link || '#'}>
+		<Link to={link || '#'} target={target}>
 			<img src={logo} className={styles} />
 		</Link>
 	);

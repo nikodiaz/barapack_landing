@@ -25,9 +25,24 @@ const Navbar = () => {
 					<Link to={'/about'}>Nosotros</Link>
 				</div>
 				<div className='flex items-end gap-4 ml-4 h-full'>
-					<Logo logo={facebook} styles='w-8 h-8' />
-					<Logo logo={instagram} styles='w-8 h-8' />
-					<Logo logo={whatsapp} styles='w-8 h-8 md:w-16 md:h-16' />
+					<Logo
+						logo={facebook}
+						styles='w-8 h-8'
+						link='https://www.facebook.com/profile.php?id=100095373276044'
+						target='_blank'
+					/>
+					<Logo
+						logo={instagram}
+						styles='w-8 h-8'
+						link='https://www.instagram.com/bara.pack?igsh=MjhmenduY25vc2Fm'
+						target='_blank'
+					/>
+					<Logo
+						logo={whatsapp}
+						styles='w-8 h-8 md:w-16 md:h-16'
+						link='https://wa.me/5491130788527'
+						target='_blank'
+					/>
 					<Dropdown open={open} setOpen={setOpen} />
 				</div>
 			</section>

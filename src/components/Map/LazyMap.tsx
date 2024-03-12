@@ -18,7 +18,6 @@ const LazyMap: React.FC<Props> = ({ data }) => {
 	const elementRef = useRef<HTMLDivElement>(null);
 	useEffect(() => {
 		const onChange = (entries: IntersectionObserverEntry[]) => {
-			console.log(entries);
 			const el = entries[0];
 			if (el.isIntersecting) {
 				setShow(true);

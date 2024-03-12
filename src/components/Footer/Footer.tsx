@@ -14,11 +14,26 @@ const Footer = () => {
 					<Logo logo={logo} styles='hidden md:inline-block w-32 h-32' />
 				</div>
 				<div className='flex items-center gap-4'>
-					<Logo logo={facebook} styles='w-12 h-12' />
+					<Logo
+						logo={facebook}
+						styles='w-12 h-12'
+						link='https://www.facebook.com/profile.php?id=100095373276044'
+						target='_blank'
+					/>
 
-					<Logo logo={instagram} styles='w-12 h-12' />
+					<Logo
+						logo={instagram}
+						styles='w-12 h-12'
+						link='https://www.instagram.com/bara.pack?igsh=MjhmenduY25vc2Fm'
+						target='_blank'
+					/>
 
-					<Logo logo={whatsapp} styles='w-12 h-12' />
+					<Logo
+						logo={whatsapp}
+						styles='w-12 h-12'
+						link='https://wa.me/5491130788527'
+						target='_blank'
+					/>
 				</div>
 			</div>
 			<div className='flex items-center gap-4 md:col-start-3 md:col-end-4'>
