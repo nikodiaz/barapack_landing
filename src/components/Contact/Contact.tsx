@@ -21,7 +21,10 @@ const Contact = () => {
 				id='contact-mb'
 				className='relative flex flex-row-reverse justify-between h-[250px] md:h-[650px]'
 			>
-				<section className='relative lg:absolute mt-28 md:mt-0 bg-image-contact w-full h-full'>
+				<section
+					id='contact'
+					className='relative lg:absolute mt-28 md:mt-0 bg-image-contact w-full h-full'
+				>
 					<div className='hidden relative lg:flex'>
 						<div className='h-64 w-72 triangle-1'></div>
 					</div>

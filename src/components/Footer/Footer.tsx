@@ -24,7 +24,7 @@ const Footer = () => {
 					<Logo
 						logo={instagram}
 						styles='w-12 h-12'
-						link='https://www.instagram.com/bara.pack?igsh=MjhmenduY25vc2Fm'
+						link='https://www.instagram.com/bara.pack'
 						target='_blank'
 					/>
 

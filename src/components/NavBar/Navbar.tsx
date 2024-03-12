@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import barapackLogo from '../../assets/svg/barapack_logo.svg';
 import instagram from '../../assets/svg/instagram.svg';
 import facebook from '../../assets/svg/facebook.svg';
@@ -9,6 +9,15 @@ import Dropdown from './Dropdown';
 
 const Navbar = () => {
 	const [open, setOpen] = useState<boolean>(false);
+	const navigate = useNavigate();
+
+	const handleContactClick = () => {
+		navigate('/', { state: { scrollTo: 'contact' } });
+	};
+
+	const handleBranchesClick = () => {
+		navigate('/', { state: { scrollTo: 'branchs' } });
+	};
 
 	return (
 		<header className='fixed z-50 top-0 flex justify-between px-2 md:px-8 w-full h-20 max-w-[1360px] mx-auto bg-white shadow-md'>
@@ -20,8 +29,8 @@ const Navbar = () => {
 			<section className='flex items-center pb-1'>
 				<div className='hidden md:flex items-end gap-8 h-full'>
 					<Link to={'/'}>Inicio</Link>
-					<a href={'#contact'}>Contacto</a>
-					<a href={'#branchs'}>Sucursales</a>
+					<button onClick={handleContactClick}>Contacto</button>
+					<button onClick={handleBranchesClick}>Sucursales</button>
 					<Link to={'/about'}>Nosotros</Link>
 				</div>
 				<div className='flex items-end gap-4 ml-4 h-full'>
@@ -34,7 +43,7 @@ const Navbar = () => {
 					<Logo
 						logo={instagram}
 						styles='w-8 h-8'
-						link='https://www.instagram.com/bara.pack?igsh=MjhmenduY25vc2Fm'
+						link='https://www.instagram.com/bara.pack'
 						target='_blank'
 					/>
 					<Logo
