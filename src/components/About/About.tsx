@@ -13,8 +13,9 @@ const About = () => {
 				className='flex flex-col items-center md:px-0'
 			>
 				<img className='w-full min-h-40 object-cover' src={about} alt='' />
-				<h3 className='absolute right-4 top-10 md:top-12 lg:top-20 xl:top-28 text-shadow-custom text-xl md:text-3xl lg:text-4xl text-right text-white w-1/2 lg:w-1/3'>
+				<h3 className='absolute right-4 top-10 sm:right-24 sm:top-12 md:right-24 lg:top-20 xl:top-28 flex items-center gap-4 text-shadow-custom text-xl md:text-3xl lg:text-4xl text-right text-white w-1/2 lg:w-1/3'>
 					Tu confianza nos impulsa a seguir creciendo
+					<div className='w-4 h-20 md:h-28 lg:h-32 bg-gradient-to-l from-[#E84E38] to-[#FB9789] rounded-xl'></div>
 				</h3>
 			</section>
 			<section
