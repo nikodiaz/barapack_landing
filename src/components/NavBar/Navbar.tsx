@@ -48,7 +48,7 @@ const Navbar = () => {
 					/>
 					<Logo
 						logo={whatsapp}
-						styles='w-8 h-8 md:w-16 md:h-16'
+						styles='w-8 h-8'
 						link='https://wa.me/5491130788527'
 						target='_blank'
 					/>
