@@ -29,7 +29,7 @@ const MapLayout: React.FC<Props> = ({ data, children }) => {
 			data-aos='fade-up'
 			data-aos-anchor-placement='top-center'
 			id='map'
-			className='flex flex-col-reverse md:flex-row items-center justify-center py-20 w-[100vw]'
+			className='flex flex-col-reverse md:flex-row items-center justify-center my-20 w-[100vw]'
 		>
 			<MapCard
 				title={data.title}

@@ -8,13 +8,14 @@ import ButtonScrollToTop from './components/Home/ButtonScrollToTop';
 function App({ children }: { children: React.ReactNode }) {
 	useEffect(() => {
 		Aos.init({
-			duration: 1000,
-			once: false,
+			duration: 500,
+			offset: 120,
+			once: true,
 		});
 	}, []);
 
 	return (
-		<main className='relative mt-[80px] font-roboto-slab font-[500] max-w-[1360px] mx-auto overflow-x-hidden'>
+		<main className='relative mt-[80px] font-roboto-slab font-[500] mx-auto overflow-x-hidden'>
 			<Navbar />
 			<Toaster position='bottom-center' />
 			{children}

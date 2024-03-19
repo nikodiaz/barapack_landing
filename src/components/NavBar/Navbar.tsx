@@ -12,7 +12,7 @@ const Navbar = () => {
 	const navigate = useNavigate();
 
 	const handleContactClick = () => {
-		navigate('/', { state: { scrollTo: 'contact' } });
+		navigate('/', { state: { scrollTo: 'contact' || 'contact-mb' } });
 	};
 
 	const handleBranchesClick = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<header className='fixed z-50 top-0 flex justify-between px-2 md:px-8 w-full h-20 max-w-[1360px] mx-auto bg-white shadow-md'>
+		<header className='fixed z-50 top-0 flex justify-between px-2 md:px-8 w-full h-20 mx-auto bg-white shadow-md'>
 			<section className='flex items-end ml-4 mb-2'>
 				<figure className='h-12 md:h-20'>
 					<Logo logo={barapackLogo} styles='w-full h-full' />

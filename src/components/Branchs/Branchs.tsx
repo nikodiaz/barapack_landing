@@ -5,8 +5,10 @@ import rosario from '../../assets/img/rosario.webp';
 import Button from '../Button/Button';
 import Card from './Card';
 import LazyMap from '../Map/LazyMap';
+import { useNavigate } from 'react-router-dom';
 
 const Branchs = () => {
+	const navigate = useNavigate();
 	const branchs = [
 		{
 			id: 0,
@@ -41,18 +43,20 @@ const Branchs = () => {
 
 	const handleBranchSelect = (id: number) => {
 		setSelectedBranch(branchs[id]);
-		const mapElement = document.getElementById('map');
-		if (mapElement) {
-			mapElement.scrollIntoView({ behavior: 'smooth' });
-		}
+		// const mapElement = document.getElementById('map');
+		// if (mapElement) {
+		// 	mapElement.scrollIntoView({ behavior: 'smooth' });
+		// }
+
+		navigate('/', { state: { scrollTo: 'map' } });
 	};
 
 	return (
 		<section
-			id='branchs'
 			data-aos='fade-up'
 			data-aos-anchor-placement='top-center'
-			className='flex flex-col items-center pt-36 py-12 px-4 md:px-0 w-full'
+			data-aos-anchor='#branchs'
+			className='flex flex-col items-center mt-36 py-12 px-4 md:px-0 w-full'
 		>
 			<div className='flex flex-col items-center gap-8 text-3xl text-[#E84E38]'>
 				<h2>Nuestra red</h2>
@@ -60,15 +64,20 @@ const Branchs = () => {
 					Encuentra nuestra sucursal más cercana
 				</p>
 			</div>
-			<div className='relative flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly py-12 w-full'>
-				{branchs.map((branch) => (
-					<Card
-						key={branch.title}
-						img={branch.img}
-						title={branch.title}
-						handleClick={() => handleBranchSelect(branch.id)}
-					/>
-				))}
+			<div className='relative my-12 w-full'>
+				<div
+					id='branchs'
+					className='flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly '
+				>
+					{branchs.map((branch) => (
+						<Card
+							key={branch.title}
+							img={branch.img}
+							title={branch.title}
+							handleClick={() => handleBranchSelect(branch.id)}
+						/>
+					))}
+				</div>
 			</div>
 			<a href='#contact'>
 				<Button

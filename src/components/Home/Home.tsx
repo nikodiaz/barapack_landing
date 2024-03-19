@@ -6,10 +6,14 @@ import money from '../../assets/svg/vaadin_money-exchange.svg';
 import barapackLogo from '../../assets/svg/barapack_logo.svg';
 import Flag from './Flag';
 import Logo from '../NavBar/Logo';
-import { useWindowSize } from 'react-use';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-	const { width } = useWindowSize();
+	const navigate = useNavigate();
+	const handleContactClick = () => {
+		navigate('/', { state: { scrollTo: 'contact' || 'contact-mb' } });
+	};
+
 	return (
 		<>
 			<Hero>
@@ -22,13 +26,12 @@ const Home = () => {
 						de servicio.
 					</p>
 
-					<a href={width < 768 ? '#contact-mb' : '#contact'}>
-						<Button
-							content='Contactanos'
-							borderStyles='px-12'
-							styles='mt-8 md:mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
-						/>
-					</a>
+					<Button
+						onclick={handleContactClick}
+						content='Contactanos'
+						borderStyles='px-12'
+						styles='mt-8 md:mt-4 bg-[#E84E38] px-2 py-2 text-white hover:text-white border border-[#E09D94]'
+					/>
 				</section>
 			</Hero>
 			<section

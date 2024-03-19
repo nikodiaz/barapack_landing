@@ -9,7 +9,7 @@ interface Props {
 const Card: React.FC<Props> = ({ img, title, handleClick }) => {
 	const { width } = useWindowSize();
 	return (
-		<article className='relative flex flex-col w-full md:w-96 mt-8 rounded-md shadow-xl h-32 md:h-full card-shadow roun'>
+		<article className='branchs relative flex flex-col w-full md:w-96 rounded-md shadow-xl h-32 md:h-full card-shadow roun'>
 			<figure className='h-full md:h-[410px]'>
 				<img
 					className='w-full h-full object-cover md:rounded-t-md md:rounded-b-none rounded-lg'
@@ -21,7 +21,7 @@ const Card: React.FC<Props> = ({ img, title, handleClick }) => {
 				onClick={() => {
 					width < 768 && handleClick();
 				}}
-				className='absolute z-10 top-12 left-0 right-0 md:static flex flex-col items-center justify-center gap-4 py-6 text-white md:text-black text-center text-xl md:text-3xl text-shadow-custom'
+				className='absolute z-10 top-12 left-0 right-0 md:static flex flex-col items-center justify-center gap-4 py-6 text-white md:text-black text-center text-xl md:text-3xl'
 			>
 				<h3>{title}</h3>
 				<Button
