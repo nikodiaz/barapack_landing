@@ -6,7 +6,7 @@ const Video = () => {
 	const [playing, setPlaying] = useState(true);
 
 	return (
-		<section className='flex justify-center w-full mt-12'>
+		<section data-aos='fade-up' className='flex justify-center w-full mt-12'>
 			<ReactPlayer
 				url={video}
 				playing={playing}
