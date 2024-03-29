@@ -10,24 +10,24 @@ const Testimonial = () => {
 	const testimonialData = [
 		{
 			id: 0,
-			name: 'Santiago Martinez',
+			name: "Mariela D'Angelo",
 			image: testimonial_1,
 			comment:
-				'"Desde el primer contacto, han demostrado un alto nivel de profesionalismo y compromiso con la satisfacción del cliente. Sus tarifas competitivas y el servicio que brindan son muy buenos. Barapack es nuestra logística de confianza."',
+				'"Desde el primer día me impresionó su compromiso con la calidad y la eficiencia. Cada entrega se realiza de manera impecable ¡cumpliendo con los plazos de manera consistente y sin complicaciones! La atención al cliente es excepcional, y su dedicación al detalle realmente marca la diferencia. Confío plenamente en ellos para cualquier envío que necesite realizar."',
 		},
 		{
 			id: 1,
-			name: 'Valentina Fux',
+			name: 'Santiago Martinez',
 			image: testimonial_2,
 			comment:
-				'"Barapack ha demostrado ser confiable y eficiente en cada envío que hemos realizado con ellos. Sus conductores son profesionales y cuidadosos con la carga. Definitivamente seguiremos confiando en ellos para todas nuestras necesidades de transporte."',
+				'"La puntualidad en las entregas y el cuidado con el que Barapack maneja nuestras mercancías son impresionantes. Sin duda, recomiendo sus servicios a cualquier empresa que busque un transporte confiable y de calidad."',
 		},
 		{
 			id: 2,
-			name: 'Julian Bianchi',
+			name: 'Pamela Eberhardt',
 			image: testimonial_3,
 			comment:
-				'"La puntualidad en las entregas y el cuidado con el que Barapack maneja nuestras mercancías son impresionantes. Sin duda, recomiendo sus servicios a cualquier empresa que busque un transporte confiable y de calidad."',
+				'"Recomiendo Barapack, ha demostrado ser una empresa seria, los pedidos llegan rápido y en perfectas condiciones, con una eficiencia increíble. Tengo la comodidad de que me lleven los pedidos a domicilio, en sus propios vehículos. Es para destacar el trato de cada uno de los trabajadores de la empresa, nunca me faltó nada de un pedido 👏👏."',
 		},
 	];
 
