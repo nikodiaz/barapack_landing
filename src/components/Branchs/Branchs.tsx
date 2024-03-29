@@ -15,8 +15,8 @@ const Branchs = () => {
 			title: 'Rosario',
 			img: rosario,
 			address: 'Av. Ovidio Lagos 6726',
-			phones: '+54 341 487 1234',
-			hours: 'Lunes a Viernes de 9:00 a 18:00',
+			phones: '+54 341 268 6496',
+			hours: 'Lunes a Viernes de 8:00 a 17:00',
 			coords: [-33.0160433, -60.6786433],
 		},
 		{
@@ -24,7 +24,7 @@ const Branchs = () => {
 			title: 'Buenos Aires',
 			img: bs_as,
 			address: 'Pepiri 1321 - Pomeya - CABA',
-			phones: '+54 341 487 1234',
+			phones: '+54 9 11 3078 8527',
 			hours: 'Lunes a Viernes de 9:00 a 18:00',
 			coords: [-34.6535016, -58.4070519],
 		},
@@ -33,8 +33,8 @@ const Branchs = () => {
 			title: 'Cordoba',
 			img: cordoba,
 			address: 'Parque Industrial, POLO 52',
-			phones: '+54 341 487 1234',
-			hours: 'Lunes a Viernes de 9:00 a 18:00',
+			phones: '+54 3572 40 7600',
+			hours: 'Lunes a Viernes de 8:00 a 17:00',
 			coords: [-31.4215478, -64.1026972],
 		},
 	];
@@ -67,7 +67,7 @@ const Branchs = () => {
 			<div className='relative my-12 w-full'>
 				<div
 					id='branchs'
-					className='flex flex-wrap flex-col md:flex-row items-center gap-8 md:gap-0 justify-evenly '
+					className='flex flex-wrap flex-col md:flex-row items-center gap-8 justify-evenly '
 				>
 					{branchs.map((branch) => (
 						<Card

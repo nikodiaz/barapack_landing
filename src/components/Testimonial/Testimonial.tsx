@@ -33,20 +33,22 @@ const Testimonial = () => {
 
 	const settings = {
 		dots: false,
-		infinite: true,
+		infinite: false,
 		speed: 500,
+		centerMode: false,
+		initialSlide: 0,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		autoplay: false,
 		autoplaySpeed: 3000,
 		responsive: [
 			{
-				breakpoint: 800,
+				breakpoint: 1000,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 					autoplay: true,
-					autoplaySpeed: 3000,
+					autoplaySpeed: 5000,
 					infinite: true,
 				},
 			},
@@ -56,7 +58,7 @@ const Testimonial = () => {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					autoplay: true,
-					autoplaySpeed: 3000,
+					autoplaySpeed: 5000,
 					infinite: true,
 				},
 			},
