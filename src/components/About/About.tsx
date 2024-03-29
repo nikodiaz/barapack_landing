@@ -4,6 +4,7 @@ import vision from '../../assets/svg/vision.svg';
 import values from '../../assets/svg/values.svg';
 import CardMobile from './CardMobile';
 import CardDesktop from './CardDesktop';
+import Video from './Video';
 
 const About = () => {
 	return (
@@ -35,6 +36,7 @@ const About = () => {
 					soluciones integrales que superen las expectativas de nuestros
 					clientes.{' '}
 				</p>
+				<Video />
 				<div
 					data-aos='fade-up'
 					className='flex flex-col items-center w-full my-16'
