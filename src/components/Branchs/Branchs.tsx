@@ -25,7 +25,7 @@ const Branchs = () => {
 			img: bs_as,
 			address: 'Pepiri 1321 - Pomeya - CABA',
 			phones: '+54 9 11 3078 8527',
-			hours: 'Lunes a Viernes de 9:00 a 18:00',
+			hours: 'Lunes a Viernes de 8:00 a 16:30',
 			coords: [-34.6535016, -58.4070519],
 		},
 		{
