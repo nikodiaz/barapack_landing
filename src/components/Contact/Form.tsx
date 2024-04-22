@@ -10,7 +10,6 @@ const Form = () => {
 
 	const onlyNumber = (e: React.KeyboardEvent<HTMLInputElement>) => {
 		const key = e.key;
-		console.log(key);
 		if (/^[0-9]+$/.test(key)) {
 			return true;
 		}
