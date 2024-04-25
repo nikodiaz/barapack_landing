@@ -20,7 +20,7 @@ const Dropdown: React.FC<Props> = ({ open, setOpen, analytics }) => {
 					open ? 'flex' : 'hidden'
 				} flex-col items-center gap-8 h-full text-left`}
 			>
-				<ul className='flex flex-col items-center gap-8 px-8 py-4 bg-white'>
+				<ul className='flex flex-col items-center gap-8 px-8 py-4 bg-white dropdown_menu--open'>
 					<li className='w-full'>
 						<Link
 							to={'/'}
