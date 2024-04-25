@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import Card from './Card';
 import LazyMap from '../Map/LazyMap';
 import { useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 
 const Branchs = () => {
 	const navigate = useNavigate();
@@ -43,10 +44,10 @@ const Branchs = () => {
 
 	const handleBranchSelect = (id: number) => {
 		setSelectedBranch(branchs[id]);
-		// const mapElement = document.getElementById('map');
-		// if (mapElement) {
-		// 	mapElement.scrollIntoView({ behavior: 'smooth' });
-		// }
+		ReactGA.event({
+			category: 'Map',
+			action: 'Click',
+		});
 
 		navigate('/', { state: { scrollTo: 'map' } });
 	};

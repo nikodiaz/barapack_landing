@@ -6,10 +6,11 @@ interface Props {
 	styles?: string;
 	link?: string;
 	target?: string;
+	onclick?: () => void;
 }
-const Logo: React.FC<Props> = ({ logo, styles, link, target }) => {
+const Logo: React.FC<Props> = ({ logo, styles, link, target, onclick }) => {
 	return (
-		<Link to={link || '#'} target={target}>
+		<Link to={link || '#'} target={target} onClick={onclick}>
 			<img src={logo} className={styles} />
 		</Link>
 	);

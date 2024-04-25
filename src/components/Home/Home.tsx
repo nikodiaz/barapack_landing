@@ -7,10 +7,15 @@ import barapackLogo from '../../assets/svg/barapack_logo.svg';
 import Flag from './Flag';
 import Logo from '../NavBar/Logo';
 import { useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 
 const Home = () => {
 	const navigate = useNavigate();
 	const handleContactClick = () => {
+		ReactGA.event({
+			category: 'Navigation to contact',
+			action: 'Click',
+		});
 		navigate('/', { state: { scrollTo: 'contact' || 'contact-mb' } });
 	};
 

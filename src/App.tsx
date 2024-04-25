@@ -4,6 +4,7 @@ import Navbar from './components/NavBar/Navbar';
 import Aos from 'aos';
 import { Toaster } from 'react-hot-toast';
 import ButtonScrollToTop from './components/Home/ButtonScrollToTop';
+import ReactGA from 'react-ga4';
 
 function App({ children }: { children: React.ReactNode }) {
 	useEffect(() => {
@@ -12,6 +13,7 @@ function App({ children }: { children: React.ReactNode }) {
 			offset: 120,
 			once: true,
 		});
+		ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
 	}, []);
 
 	return (

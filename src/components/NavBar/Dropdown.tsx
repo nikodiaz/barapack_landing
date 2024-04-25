@@ -4,8 +4,9 @@ import { MdMenu } from 'react-icons/md';
 type Props = {
 	open: boolean;
 	setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	analytics: (category: string) => void;
 };
-const Dropdown: React.FC<Props> = ({ open, setOpen }) => {
+const Dropdown: React.FC<Props> = ({ open, setOpen, analytics }) => {
 	return (
 		<nav className='relative md:hidden'>
 			<button
@@ -21,16 +22,36 @@ const Dropdown: React.FC<Props> = ({ open, setOpen }) => {
 			>
 				<ul className='flex flex-col items-center gap-8 px-8 py-4 bg-white'>
 					<li className='w-full'>
-						<Link to={'/'}>Inicio</Link>
+						<Link
+							to={'/'}
+							onClick={() => analytics('Navigation to start')}
+						>
+							Inicio
+						</Link>
 					</li>
 					<li className='w-full'>
-						<a href={'#contact'}>Contacto</a>
+						<a
+							href={'#contact'}
+							onClick={() => analytics('Navigation to contact')}
+						>
+							Contacto
+						</a>
 					</li>
 					<li className='w-full'>
-						<a href={'#branchs'}>Sucursales</a>
+						<a
+							href={'#branchs'}
+							onClick={() => analytics('Navigation to branches')}
+						>
+							Sucursales
+						</a>
 					</li>
 					<li className='w-full'>
-						<Link to={'/about'}>Nosotros</Link>
+						<Link
+							to={'/about'}
+							onClick={() => analytics('Navigation to about')}
+						>
+							Nosotros
+						</Link>
 					</li>
 				</ul>
 			</div>
