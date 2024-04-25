@@ -4,8 +4,15 @@ import facebook from '../../assets/svg/facebook.svg';
 import whatsapp from '../../assets/svg/whatsapp.svg';
 import futurisi from '../../assets/svg/futurisi.svg';
 import Logo from '../NavBar/Logo';
+import ReactGA from 'react-ga4';
 
 const Footer = () => {
+	const handleClick = (category: string) => {
+		ReactGA.event({
+			category: `${category}`,
+			action: 'Click',
+		});
+	};
 	return (
 		<footer className='grid grid-rows-2 md:grid-rows-1 md:grid-cols-3 place-items-center gap-y-8 py-8 min-h-40 text-white bg-[#3E4453]'>
 			<div className='flex flex-col-reverse items-center md:justify-evenly md:flex-row gap-8 md:col-start-1 md:col-end-3 w-full'>
@@ -17,6 +24,7 @@ const Footer = () => {
 					<Logo
 						logo={facebook}
 						styles='w-12 h-12'
+						onclick={() => handleClick('Navigation to facebook')}
 						link='https://www.facebook.com/profile.php?id=100095373276044'
 						target='_blank'
 					/>
@@ -24,6 +32,7 @@ const Footer = () => {
 					<Logo
 						logo={instagram}
 						styles='w-12 h-12'
+						onclick={() => handleClick('Navigation to instagram')}
 						link='https://www.instagram.com/bara.pack'
 						target='_blank'
 					/>
@@ -31,6 +40,7 @@ const Footer = () => {
 					<Logo
 						logo={whatsapp}
 						styles='w-12 h-12'
+						onclick={() => handleClick('Navigation to whatsapp')}
 						link='https://wa.me/5491130788527'
 						target='_blank'
 					/>
@@ -41,6 +51,7 @@ const Footer = () => {
 				<Logo
 					link='https://futurisi.com'
 					target='_blank'
+					onclick={() => handleClick('Navigation to futurisi')}
 					logo={futurisi}
 					styles='w-20 h-20'
 				/>

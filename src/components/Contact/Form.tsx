@@ -4,6 +4,7 @@ import HeaderForm from './HeaderForm';
 import Input from './Input';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
+import ReactGA from 'react-ga4';
 
 const Form = () => {
 	const form: RefObject<HTMLFormElement> = useRef(null);
@@ -35,6 +36,11 @@ const Form = () => {
 
 	const sendEmail = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+
+		ReactGA.event({
+			category: 'Contact',
+			action: 'Submit',
+		});
 
 		if (form.current) {
 			let fieldsValid = true;
