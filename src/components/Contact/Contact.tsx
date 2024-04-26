@@ -2,13 +2,15 @@ import Logo from '../NavBar/Logo';
 import Form from './Form';
 import barapackLogo from '../../assets/svg/barapack_logo.svg';
 import Button from '../Button/Button';
-import { useState } from 'react';
 import { useWindowSize } from 'react-use';
 import HeaderForm from './HeaderForm';
-import PopUpForm from './PopUpForm';
+import { Dispatch, FC, SetStateAction } from 'react';
 
-const Contact = () => {
-	const [open, setOpen] = useState<boolean>(false);
+interface Props {
+	setOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const Contact: FC<Props> = ({ setOpen }) => {
 	const { width } = useWindowSize();
 
 	return (
@@ -45,7 +47,6 @@ const Contact = () => {
 				<section className='hidden lg:block absolute z-10 w-full md:w-1/2'>
 					<Form />
 				</section>
-				<PopUpForm open={open} setOpen={setOpen} />
 			</section>
 			<div className='hidden md:block form-shadow-2 h-16'></div>
 		</section>

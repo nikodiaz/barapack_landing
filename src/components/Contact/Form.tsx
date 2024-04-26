@@ -86,7 +86,7 @@ const Form = () => {
 			<form
 				ref={form}
 				onSubmit={sendEmail}
-				className='absolute z-20 md:top-20 lg:top-0 w-full px-4 lg:pr-8 pt-36 md:pt-12'
+				className='absolute z-20 top-8 md:top-20 lg:top-0 w-full px-4 lg:pr-8 pt-36 md:pt-12'
 			>
 				<Input description='Razón social' name='business_name' />
 
