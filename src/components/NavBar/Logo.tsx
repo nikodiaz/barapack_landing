@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 	target?: string;
 	onclick?: () => void;
 }
-const Logo: React.FC<Props> = ({ logo, styles, link, target, onclick }) => {
+const Logo: FC<Props> = ({ logo, styles, link, target, onclick }) => {
 	return (
 		<Link to={link || '#'} target={target} onClick={onclick}>
 			<img src={logo} className={styles} />

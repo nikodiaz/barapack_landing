@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import MapLayout from './MapLayout';
 import Map from './Map';
 
@@ -13,7 +13,7 @@ interface Props {
 	};
 }
 
-const LazyMap: React.FC<Props> = ({ data }) => {
+const LazyMap: FC<Props> = ({ data }) => {
 	const [show, setShow] = useState<boolean>(false);
 	const elementRef = useRef<HTMLDivElement>(null);
 	useEffect(() => {

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import Button from '../Button/Button';
 import { useWindowScroll } from 'react-use';
 
-const ButtonScrollToTop: React.FC = () => {
+const ButtonScrollToTop: FC = () => {
 	const [isVisible, setIsVisible] = useState(false);
 	const { y } = useWindowScroll();
 

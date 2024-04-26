@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 
 interface Props {
 	testimonial: {
@@ -8,7 +8,7 @@ interface Props {
 		image: string;
 	};
 }
-const Card: React.FC<Props> = ({ testimonial }) => {
+const Card: FC<Props> = ({ testimonial }) => {
 	return (
 		<article className='flex flex-col flex-grow items-center justify-center p-4 mx-2 my-8 md:h-96 rounded-lg shadow-lg'>
 			<div className='relative flex items-center justify-center w-28 min-h-14 p-2 rounded-b-full inner-shadow-custom'>

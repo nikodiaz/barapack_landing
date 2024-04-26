@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/NavBar/Navbar';
 import Aos from 'aos';
@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import ButtonScrollToTop from './components/Home/ButtonScrollToTop';
 import ReactGA from 'react-ga4';
 
-function App({ children }: { children: React.ReactNode }) {
+function App({ children }: { children: ReactNode }) {
 	useEffect(() => {
 		Aos.init({
 			duration: 500,

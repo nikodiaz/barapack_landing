@@ -1,12 +1,14 @@
+import { FC, ReactNode } from 'react';
+
 interface Props {
-	content: string | React.ReactNode;
+	content: string | ReactNode;
 	styles: string;
 	borderStyles?: string;
 	onclick?: () => void;
 	disabled?: boolean;
 }
 
-const Button: React.FC<Props> = ({
+const Button: FC<Props> = ({
 	content,
 	styles,
 	onclick,

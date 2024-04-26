@@ -1,7 +1,9 @@
+import { FC, ReactNode } from 'react';
+
 interface Props {
-	children?: React.ReactNode;
+	children?: ReactNode;
 }
-const Hero: React.FC<Props> = ({ children }) => {
+const Hero: FC<Props> = ({ children }) => {
 	return (
 		<section
 			data-aos='fade-left'

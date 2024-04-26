@@ -1,12 +1,12 @@
-import React from 'react';
+import { FC, ReactNode } from 'react';
 import Icon from './Icon';
 
 type Props = {
 	icon: string;
 	title: string;
-	children: React.ReactNode;
+	children: ReactNode;
 };
-const CardDesktop: React.FC<Props> = ({ icon, title, children }) => {
+const CardDesktop: FC<Props> = ({ icon, title, children }) => {
 	return (
 		<article className='relative hidden sm:flex justify-between items-center my-12 w-[400px] h-60 shadow-lg rounded-tl-full'>
 			<Icon icon={icon} styles='absolute -top-8 left-60' />

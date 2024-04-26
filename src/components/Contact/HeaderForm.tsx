@@ -1,9 +1,11 @@
+import { FC } from 'react';
+
 type Props = {
 	styles?: string;
 	text: string;
 };
 
-const HeaderForm: React.FC<Props> = ({ styles, text }) => {
+const HeaderForm: FC<Props> = ({ styles, text }) => {
 	return (
 		<div className={`${styles} py-24 pt-36 px-4 lg:px-8`}>
 			<p className={`flex flex-col ${text}`}>

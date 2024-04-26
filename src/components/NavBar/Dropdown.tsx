@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import { MdMenu } from 'react-icons/md';
+import { Dispatch, FC, SetStateAction } from 'react';
 
 type Props = {
 	open: boolean;
-	setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	setOpen: Dispatch<SetStateAction<boolean>>;
 	analytics: (category: string) => void;
 };
-const Dropdown: React.FC<Props> = ({ open, setOpen, analytics }) => {
+const Dropdown: FC<Props> = ({ open, setOpen, analytics }) => {
 	return (
 		<nav className='relative md:hidden'>
 			<button

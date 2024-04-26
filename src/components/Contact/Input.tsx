@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC, KeyboardEvent } from 'react';
 
 interface Props {
 	description: string;
@@ -7,9 +7,9 @@ interface Props {
 	styles?: string;
 	maxLength?: number;
 	minLength?: number;
-	onkeydown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+	onkeydown?: (e: KeyboardEvent<HTMLInputElement>) => void;
 }
-const Input: React.FC<Props> = ({
+const Input: FC<Props> = ({
 	description,
 	type,
 	name,

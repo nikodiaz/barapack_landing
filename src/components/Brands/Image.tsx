@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 
 type Props = {
 	src: string;
@@ -7,7 +7,7 @@ type Props = {
 	container?: string;
 };
 
-const Image: React.FC<Props> = ({ src, alt, styles, container }) => {
+const Image: FC<Props> = ({ src, alt, styles, container }) => {
 	return (
 		<picture className={container}>
 			<img src={src} alt={alt} className={styles} />

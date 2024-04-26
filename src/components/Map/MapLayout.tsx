@@ -1,6 +1,6 @@
 import { MapContainer } from 'react-leaflet';
 import MapCard from './MapCard';
-import { useEffect, useState } from 'react';
+import { FC, ReactNode, useEffect, useState } from 'react';
 
 interface Props {
 	data: {
@@ -11,9 +11,9 @@ interface Props {
 		hours: string;
 		coords: number[];
 	};
-	children: React.ReactNode;
+	children: ReactNode;
 }
-const MapLayout: React.FC<Props> = ({ data, children }) => {
+const MapLayout: FC<Props> = ({ data, children }) => {
 	const [center, setCenter] = useState<[number, number]>([
 		data.coords[0],
 		data.coords[1],

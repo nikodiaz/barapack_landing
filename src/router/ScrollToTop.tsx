@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const ScrollToTopOnRouteChange: React.FC = () => {
+const ScrollToTopOnRouteChange: FC = () => {
 	const location = useLocation();
 
 	useEffect(() => {

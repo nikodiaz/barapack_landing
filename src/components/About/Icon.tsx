@@ -1,9 +1,11 @@
+import { FC } from 'react';
+
 interface Props {
 	icon: string;
 	styles?: string;
 }
 
-const Icon: React.FC<Props> = ({ icon, styles }) => {
+const Icon: FC<Props> = ({ icon, styles }) => {
 	return (
 		<div
 			className={`flex items-center justify-center rounded-full shadow-md bg-[#E84E38] px-1 py-1 text-white hover:text-white border border-white ${styles}`}

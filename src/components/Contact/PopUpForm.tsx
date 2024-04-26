@@ -1,12 +1,13 @@
+import { Dispatch, FC, SetStateAction } from 'react';
 import Button from '../Button/Button';
 import Form from './Form';
 import { MdClose } from 'react-icons/md';
 
 type Props = {
 	open: boolean;
-	setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	setOpen: Dispatch<SetStateAction<boolean>>;
 };
-const PopUpForm: React.FC<Props> = ({ open, setOpen }) => {
+const PopUpForm: FC<Props> = ({ open, setOpen }) => {
 	return (
 		<div
 			className={`fixed z-50 top-0 bottom-0 left-0 right-0 lg:hidden ${

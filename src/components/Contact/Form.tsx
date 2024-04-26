@@ -1,4 +1,4 @@
-import { useRef, FormEvent, RefObject } from 'react';
+import { useRef, FormEvent, RefObject, KeyboardEvent } from 'react';
 import Button from '../Button/Button';
 import HeaderForm from './HeaderForm';
 import Input from './Input';
@@ -9,7 +9,7 @@ import ReactGA from 'react-ga4';
 const Form = () => {
 	const form: RefObject<HTMLFormElement> = useRef(null);
 
-	const onlyNumber = (e: React.KeyboardEvent<HTMLInputElement>) => {
+	const onlyNumber = (e: KeyboardEvent<HTMLInputElement>) => {
 		const key = e.key;
 		if (/^[0-9]+$/.test(key)) {
 			return true;

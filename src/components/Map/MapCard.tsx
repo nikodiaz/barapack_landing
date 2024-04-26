@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 interface Props {
 	img: string;
 	title: string;
@@ -5,7 +7,7 @@ interface Props {
 	phones: string;
 	hours: string;
 }
-const Card: React.FC<Props> = ({ img, title, address, phones, hours }) => {
+const Card: FC<Props> = ({ img, title, address, phones, hours }) => {
 	return (
 		<article className='relative flex flex-col w-full md:w-80 lg:w-96 mb-8 md:mb-0 rounded-l-md shadow-xl md:h-[500px]'>
 			<figure className='hidden md:block h-full md:h-[400px]'>

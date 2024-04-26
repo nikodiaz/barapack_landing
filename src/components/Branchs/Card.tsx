@@ -1,12 +1,13 @@
 import { useWindowSize } from 'react-use';
 import Button from '../Button/Button';
+import { FC } from 'react';
 
 interface Props {
 	img: string;
 	title: string;
 	handleClick: () => void;
 }
-const Card: React.FC<Props> = ({ img, title, handleClick }) => {
+const Card: FC<Props> = ({ img, title, handleClick }) => {
 	const { width } = useWindowSize();
 	return (
 		<article className='branchs relative flex flex-col w-full md:w-96 rounded-md shadow-xl h-32 md:h-full card-shadow roun'>
