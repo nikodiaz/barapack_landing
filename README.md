@@ -11,7 +11,7 @@ Landing page para [Barapack](https://barapack.com.ar/), empresa líder de transp
 
 ## Secciones
 
-![image](https://github.com/user-attachments/assets/38b03832-d751-4d20-8753-26237dfc4b84)
+![Captura de pantalla_2024-07-26_12-59-40](https://github.com/user-attachments/assets/061eabcf-f208-4946-9e98-3f22ea51efe1)
 
 - **Inicio**
 - **Formulario de contacto**
