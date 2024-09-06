@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Barapack - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page para [Barapack](https://barapack.com.ar/), empresa líder de transporte de cargas y encomiendas.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![REACT](https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=000)
+![TAILWINDCSS](https://img.shields.io/badge/TAILWINDCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=000)
+[![LEAFLET](https://img.shields.io/badge/LEAFLET-199900?style=for-the-badge&logo=leaflet&logoColor=000&link=https://leafletjs.com/)](https://leafletjs.com/)
+[![EMAILJS](https://img.shields.io/badge/EMAILJS-ff8434?style=for-the-badge&logoColor=000&link=https://www.emailjs.com/)](https://www.emailjs.com/)
 
-## Expanding the ESLint configuration
+## Secciones
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![image](https://github.com/user-attachments/assets/38b03832-d751-4d20-8753-26237dfc4b84)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Inicio**
+- **Formulario de contacto**
+- **Mapa interactivo de las distintas sucursales**
+- **Testimonios**
+- **Sobre nosotros**
